@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Rabbits vs. Wolfs</title>
+  <link rel="stylesheet" media="all" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  <link rel="stylesheet" media="all" href="app.css">
+</head>
+
+<body>
+  <div class='controls'>
+    <div class='controls__items'>
+      <input type="text" placeholder="Количество травы" id='grass_count'>
+      <input type="text" placeholder="Количество зайцев" id='rabbit_count'>
+      <input type="text" placeholder="Количество волков" id='wolf_count'>
+      <button id='trigger'>Пуск! <span id='trigger_percents'></span></button>
+    </div>
+    <h1 class='controls__message' id='message'></h1>
+  </div>
+  <div class='grid'>
+    <div class='grid__rabbits' id="rabbit_container"></div>
+    <div class='grid__wolfs' id="wolf_container"></div>
+  </div>
+  <div class='grass' id="grass_container"></div>
+  <script src='app.js'></script>
+</body>
+
+</html>

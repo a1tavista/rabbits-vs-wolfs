@@ -1,0 +1,101 @@
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-color: #70c7f0;
+  background-image: url('sky.png');
+  background-position: 0 60px;
+  background-repeat: repeat-x;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: row;
+
+  padding: 0 50px;
+}
+
+.grid__wolfs, .grid__rabbits {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.grid__wolfs img {
+  width: 80px;
+  height: 80px;
+  margin: 0 5px;
+}
+
+.grid__rabbits img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.grass {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  min-height: 20px;
+  background: url('ground.jpg');
+  background-repeat: repeat;
+  background-size: 60px 60px;
+}
+
+.controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: url('space.jpg');
+  padding: 10px 20px;
+}
+
+.controls__items {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.controls__message {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.controls button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0;
+}
+
+.controls input {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: 0;
+}
+
+.grass img {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
